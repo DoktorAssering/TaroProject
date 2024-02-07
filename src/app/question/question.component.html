@@ -1,0 +1,8 @@
+<main>
+  <h1 class="question-title">Какой вопрос вас интересует?</h1>
+  <form (ngSubmit)="submitForm()">
+    <input type="text" placeholder="Например индивидуальный гороскоп на год" name="description" [(ngModel)]="description">
+    <button class="search-btn">Поиск</button>
+  </form>
+  <button type="submit" class="question-btn"><a routerLink="/feedback">Далее</a></button>
+</main>
